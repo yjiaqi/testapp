@@ -12,6 +12,8 @@ class GruposController < ApplicationController
   def show
   end
 
+  def jiaqi
+  end
   # GET /grupos/new
   def new
     @grupo = Grupo.new
