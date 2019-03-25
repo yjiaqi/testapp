@@ -12,5 +12,16 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require materialize
 //= require turbolinks
+//= require jquery 
+//= require materialize-sprockets
+//= require materialize/extras/nouislider
 //= require_tree .
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+});

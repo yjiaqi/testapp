@@ -10,6 +10,7 @@ gem 'simple_form'
 #
 gem 'materialize-sass'
 gem 'foundation-rails'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
