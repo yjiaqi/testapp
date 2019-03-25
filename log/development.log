@@ -1,0 +1,2813 @@
+Started GET "/" for ::1 at 2019-03-24 18:11:55 +0000
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "FFF_development" does not exist
+):
+  
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (518.8ms)[0m  [1m[35mCREATE DATABASE "FFF_development" ENCODING = 'unicode'[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (376.8ms)[0m  [1m[35mCREATE DATABASE "FFF_test" ENCODING = 'unicode'[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/" for ::1 at 2019-03-24 18:13:36 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 26ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (53.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (45.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateGrupos (20190324181707)
+  [1m[35m (39.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "grupos" ("id" bigserial primary key, "nome" text, "descricao" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190324181707_create_grupos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190324181707"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-24 18:19:08.417497"], ["updated_at", "2019-03-24 18:19:08.417497"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (39.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/" for ::1 at 2019-03-24 18:19:22 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 25ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/s" for ::1 at 2019-03-24 18:19:29 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/s"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-03-24 18:19:52 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faculdade/index?inserir=Enviar" for ::1 at 2019-03-24 18:19:57 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/faculdade/index"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-03-24 18:19:58 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:20:00 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.6ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 665ms (Views: 657.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/grupos/new" for ::1 at 2019-03-24 18:20:04 +0000
+Processing by GruposController#new as HTML
+  Rendering grupos/new.html.erb within layouts/application
+  Rendered grupos/_form.html.erb (15.8ms)
+  Rendered grupos/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 62ms (Views: 35.9ms | ActiveRecord: 14.8ms)
+
+
+Started POST "/grupos" for ::1 at 2019-03-24 18:20:30 +0000
+Processing by GruposController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sSk5PKFznp2qNQ3w/UoYA2MsKanytvgWZ8zLC0eHfMcey26ijvzP/KSeVT0VZslk1g7AyEt75EMCJqkYkNFzkA==", "grupo"=>{"nome"=>"NEA", "descricao"=>"GRUPO DE ESTUDANTES ESTRANGEIROS"}, "commit"=>"Create Grupo"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/grupos_controller.rb:30
+  [1m[36mGrupo Create (0.7ms)[0m  [1m[32mINSERT INTO "grupos" ("nome", "descricao", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "NEA"], ["descricao", "GRUPO DE ESTUDANTES ESTRANGEIROS"], ["created_at", "2019-03-24 18:20:30.153943"], ["updated_at", "2019-03-24 18:20:30.153943"]]
+  ↳ app/controllers/grupos_controller.rb:30
+  [1m[35m (80.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/grupos_controller.rb:30
+Redirected to http://localhost:3000/grupos/1
+Completed 302 Found in 87ms (ActiveRecord: 81.1ms)
+
+
+Started GET "/grupos/1" for ::1 at 2019-03-24 18:20:30 +0000
+Processing by GruposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrupo Load (2.3ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  Rendering grupos/show.html.erb within layouts/application
+  Rendered grupos/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 25.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:20:33 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.3ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grupos/1" for ::1 at 2019-03-24 18:20:39 +0000
+Processing by GruposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrupo Load (0.8ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  Rendering grupos/show.html.erb within layouts/application
+  Rendered grupos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 28.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:20:41 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.3ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 37ms (Views: 29.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grupos/1/edit" for ::1 at 2019-03-24 18:20:41 +0000
+Processing by GruposController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  Rendering grupos/edit.html.erb within layouts/application
+  Rendered grupos/_form.html.erb (3.1ms)
+  Rendered grupos/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/grupos/1" for ::1 at 2019-03-24 18:20:45 +0000
+Processing by GruposController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MhfurQ9L1Drti6StIZ9Tkyd88jDYS0wrvkQ69dw/hKH56+WtlD99CSnmFz8iZumPAcd7p+x0a4Ko+tbkRRY56A==", "grupo"=>{"nome"=>"NEA2", "descricao"=>"GRUPO DE ESTUDANTES ESTRANGEIROS"}, "commit"=>"Update Grupo", "id"=>"1"}
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/grupos_controller.rb:44
+  [1m[36mGrupo Update (0.3ms)[0m  [1m[33mUPDATE "grupos" SET "nome" = $1, "updated_at" = $2 WHERE "grupos"."id" = $3[0m  [["nome", "NEA2"], ["updated_at", "2019-03-24 18:20:45.280823"], ["id", 1]]
+  ↳ app/controllers/grupos_controller.rb:44
+  [1m[35m (40.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/grupos_controller.rb:44
+Redirected to http://localhost:3000/grupos/1
+Completed 302 Found in 51ms (ActiveRecord: 41.1ms)
+
+
+Started GET "/grupos/1" for ::1 at 2019-03-24 18:20:45 +0000
+Processing by GruposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  Rendering grupos/show.html.erb within layouts/application
+  Rendered grupos/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:20:48 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.8ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/grupos/1" for ::1 at 2019-03-24 18:20:50 +0000
+Processing by GruposController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ptR8reavZkNekPt2p5hx8KcbcpM/j4Wi7BA205E/nm9bTvh5+EyDEVnjvL0RxmhRhGv+w+XxtxuCsCH9d2S7+A==", "id"=>"1"}
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/grupos_controller.rb:57
+  [1m[36mGrupo Destroy (0.2ms)[0m  [1m[31mDELETE FROM "grupos" WHERE "grupos"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/grupos_controller.rb:57
+  [1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/grupos_controller.rb:57
+Redirected to http://localhost:3000/grupos
+Completed 302 Found in 20ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:20:50 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grupos/new" for ::1 at 2019-03-24 18:20:52 +0000
+Processing by GruposController#new as HTML
+  Rendering grupos/new.html.erb within layouts/application
+  Rendered grupos/_form.html.erb (1.9ms)
+  Rendered grupos/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/grupos" for ::1 at 2019-03-24 18:20:56 +0000
+Processing by GruposController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yCFElxlMjGXa86/vuQTQTP6HxKEFwvodC4pEqLtm8N9nwxMJNsPdBNRY9yJRKAErS6UtwLwP5khuYCa7bDD/iA==", "grupo"=>{"nome"=>"N", "descricao"=>"GH"}, "commit"=>"Create Grupo"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/grupos_controller.rb:30
+  [1m[36mGrupo Create (0.2ms)[0m  [1m[32mINSERT INTO "grupos" ("nome", "descricao", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "N"], ["descricao", "GH"], ["created_at", "2019-03-24 18:20:56.868168"], ["updated_at", "2019-03-24 18:20:56.868168"]]
+  ↳ app/controllers/grupos_controller.rb:30
+  [1m[35m (40.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/grupos_controller.rb:30
+Redirected to http://localhost:3000/grupos/2
+Completed 302 Found in 44ms (ActiveRecord: 40.6ms)
+
+
+Started GET "/grupos/2" for ::1 at 2019-03-24 18:20:56 +0000
+Processing by GruposController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  Rendering grupos/show.html.erb within layouts/application
+  Rendered grupos/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:20:57 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grupos/new" for ::1 at 2019-03-24 18:20:58 +0000
+Processing by GruposController#new as HTML
+  Rendering grupos/new.html.erb within layouts/application
+  Rendered grupos/_form.html.erb (1.7ms)
+  Rendered grupos/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 28ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/grupos" for ::1 at 2019-03-24 18:21:02 +0000
+Processing by GruposController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3q+zyHCjKSB3nywr6HZJfJF5VNxVZxlm6ltH7Uv0gBZxTeRWXyx4QXk0dOYAWpgbJFu9veyqBTOPsSX+nKKPQQ==", "grupo"=>{"nome"=>"HJG", "descricao"=>"HJGHJG"}, "commit"=>"Create Grupo"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/grupos_controller.rb:30
+  [1m[36mGrupo Create (0.2ms)[0m  [1m[32mINSERT INTO "grupos" ("nome", "descricao", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "HJG"], ["descricao", "HJGHJG"], ["created_at", "2019-03-24 18:21:02.079282"], ["updated_at", "2019-03-24 18:21:02.079282"]]
+  ↳ app/controllers/grupos_controller.rb:30
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/grupos_controller.rb:30
+Redirected to http://localhost:3000/grupos/3
+Completed 302 Found in 5ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/grupos/3" for ::1 at 2019-03-24 18:21:02 +0000
+Processing by GruposController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  Rendering grupos/show.html.erb within layouts/application
+  Rendered grupos/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:21:03 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (1.1ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:24:08 +0000
+Started GET "/grupos/new" for ::1 at 2019-03-24 18:24:08 +0000
+Processing by GruposController#index as HTML
+Processing by GruposController#new as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.4ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendering grupos/new.html.erb within layouts/application
+  Rendered grupos/index.html.erb within layouts/application (12.5ms)
+  Rendered grupos/_form.html.erb (1.9ms)
+  Rendered grupos/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 51ms (Views: 34.0ms | ActiveRecord: 10.3ms)
+
+
+Completed 200 OK in 52ms (Views: 32.6ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:26:08 +0000
+Started GET "/grupos/new" for ::1 at 2019-03-24 18:26:08 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by GruposController#new as HTML
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  Rendering grupos/new.html.erb within layouts/application
+  [1m[36mGrupo Load (2.7ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/_form.html.erb (20.7ms)
+  Rendered grupos/new.html.erb within layouts/application (23.6ms)
+  Rendered grupos/index.html.erb within layouts/application (203.9ms)
+Completed 200 OK in 299ms (Views: 265.6ms | ActiveRecord: 7.3ms)
+
+
+Completed 200 OK in 282ms (Views: 96.9ms | ActiveRecord: 180.2ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:26:58 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:27:07 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:27:15 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  [1m[36mGrupo Load (0.2ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.erb:15
+  Rendered grupos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (42.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (41.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateGrupos (20190324184634)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (45.0ms)[0m  [1m[35mCREATE TABLE "grupos" ("id" bigserial primary key, "nome" character varying, "descricao" text, "faculdade" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190324184634_create_grupos.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (176.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "FFF_development"[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (157.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "FFF_test"[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (547.9ms)[0m  [1m[35mCREATE DATABASE "FFF_development" ENCODING = 'unicode'[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (361.0ms)[0m  [1m[35mCREATE DATABASE "FFF_test" ENCODING = 'unicode'[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateGrupos (20190324184634)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "grupos" ("id" bigserial primary key, "nome" character varying, "descricao" text, "faculdade" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190324184634_create_grupos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190324184634"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-24 18:49:11.705819"], ["updated_at", "2019-03-24 18:49:11.705819"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/grupos" for ::1 at 2019-03-24 18:49:51 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.slim within layouts/application
+  [1m[36mGrupo Load (0.7ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.slim:14
+  Rendered grupos/index.html.slim within layouts/application (27.1ms)
+Completed 500 Internal Server Error in 466ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1507262337605052857_70278979238400'
+Started GET "/grupos" for ::1 at 2019-03-24 18:53:00 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.slim within layouts/application
+  [1m[36mGrupo Load (0.4ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.slim:14
+  Rendered grupos/index.html.slim within layouts/application (27.1ms)
+Completed 200 OK in 5912ms (Views: 5888.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/grupos/new" for ::1 at 2019-03-24 18:53:12 +0000
+Processing by GruposController#new as HTML
+  Rendering grupos/new.html.slim within layouts/application
+  Rendered grupos/_form.html.slim (71.3ms)
+  Rendered grupos/new.html.slim within layouts/application (75.9ms)
+Completed 200 OK in 112ms (Views: 98.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:53:35 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.slim within layouts/application
+  [1m[36mGrupo Load (0.3ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.slim:14
+  Rendered grupos/index.html.slim within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grupos/new" for ::1 at 2019-03-24 18:53:37 +0000
+Processing by GruposController#new as HTML
+  Rendering grupos/new.html.slim within layouts/application
+  Rendered grupos/_form.html.slim (8.2ms)
+  Rendered grupos/new.html.slim within layouts/application (13.4ms)
+Completed 200 OK in 72ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/grupos" for ::1 at 2019-03-24 18:53:55 +0000
+Processing by GruposController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sg098MENVS06yrczVYs7DPbzYLVHrjvaXLU25fHYJCQd72pu7oIETDRh7/69p+prQ9GJ1P5jJ485X1T2Jo4rcw==", "grupo"=>{"nome"=>"Novo grupo", "descricao"=>"boa gente", "faculdade"=>"fct"}, "commit"=>"Create Grupo"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/grupos_controller.rb:30
+  [1m[36mGrupo Create (0.7ms)[0m  [1m[32mINSERT INTO "grupos" ("nome", "descricao", "faculdade", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nome", "Novo grupo"], ["descricao", "boa gente"], ["faculdade", "fct"], ["created_at", "2019-03-24 18:53:55.891367"], ["updated_at", "2019-03-24 18:53:55.891367"]]
+  ↳ app/controllers/grupos_controller.rb:30
+  [1m[35m (39.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/grupos_controller.rb:30
+Redirected to http://localhost:3000/grupos/1
+Completed 302 Found in 44ms (ActiveRecord: 40.0ms)
+
+
+Started GET "/grupos/1" for ::1 at 2019-03-24 18:53:55 +0000
+Processing by GruposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrupo Load (0.4ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  Rendering grupos/show.html.slim within layouts/application
+  Rendered grupos/show.html.slim within layouts/application (3.8ms)
+Completed 200 OK in 37ms (Views: 31.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:53:58 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.slim within layouts/application
+  [1m[36mGrupo Load (0.3ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.slim:14
+  Rendered grupos/index.html.slim within layouts/application (4.8ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grupos/1" for ::1 at 2019-03-24 18:54:01 +0000
+Processing by GruposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrupo Load (0.3ms)[0m  [1m[34mSELECT  "grupos".* FROM "grupos" WHERE "grupos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/grupos_controller.rb:67
+  Rendering grupos/show.html.slim within layouts/application
+  Rendered grupos/show.html.slim within layouts/application (5.1ms)
+Completed 200 OK in 40ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:54:02 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.slim within layouts/application
+  [1m[36mGrupo Load (0.3ms)[0m  [1m[34mSELECT "grupos".* FROM "grupos"[0m
+  ↳ app/views/grupos/index.html.slim:14
+  Rendered grupos/index.html.slim within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 18:55:35 +0000
+Processing by GruposController#index as HTML
+Completed 406 Not Acceptable in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (GruposController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+  
+actionpack (5.2.2.1) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (5.2.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/grupos" for ::1 at 2019-03-24 18:55:50 +0000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by GruposController#index as HTML
+Completed 406 Not Acceptable in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (GruposController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+  
+actionpack (5.2.2.1) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (5.2.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/grupos" for ::1 at 2019-03-24 18:56:43 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  Rendered grupos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 461ms (Views: 458.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/sample-1.jpg" for ::1 at 2019-03-24 18:56:43 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/images/sample-1.jpg"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/grupos" for ::1 at 2019-03-24 18:56:51 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  Rendered grupos/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/sample-1.jpg" for ::1 at 2019-03-24 18:56:51 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/images/sample-1.jpg"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/grupos" for ::1 at 2019-03-24 18:57:22 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  Rendered grupos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/sample-1.jpg" for ::1 at 2019-03-24 18:57:22 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/images/sample-1.jpg"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/grupos" for ::1 at 2019-03-24 18:57:57 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  Rendered grupos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4434ms (Views: 4431.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/sample-1.jpg" for ::1 at 2019-03-24 18:58:01 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/images/sample-1.jpg"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/grupos" for ::1 at 2019-03-24 19:08:16 +0000
+  [1m[35m (25.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/gru" for ::1 at 2019-03-24 19:08:17 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/grupos" for ::1 at 2019-03-24 19:08:21 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/g" for ::1 at 2019-03-24 19:08:21 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to DeviseCreateUtilizadors (20190324190609)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE "utilizadors" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190324190609_devise_create_utilizadors.rb:5
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_utilizadors_on_email" ON "utilizadors"  ("email")[0m
+  ↳ db/migrate/20190324190609_devise_create_utilizadors.rb:39
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_utilizadors_on_reset_password_token" ON "utilizadors"  ("reset_password_token")[0m
+  ↳ db/migrate/20190324190609_devise_create_utilizadors.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190324190609"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4357972467758213850)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/g" for ::1 at 2019-03-24 19:10:09 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/g"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-03-24 19:10:28 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:10:30 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 458ms (Views: 437.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:10:37 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:10:42 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 87ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/password/new" for ::1 at 2019-03-24 19:10:43 +0000
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (5.9ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/passwords/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 58ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:10:45 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:10:46 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 98ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:11:34 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 87ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/password/new" for ::1 at 2019-03-24 19:11:36 +0000
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/passwords/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 66ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:11:39 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:11:41 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:11:43 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:11:44 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 59ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:11:46 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:11:47 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/password/new" for ::1 at 2019-03-24 19:11:49 +0000
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/passwords/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 67ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:11:50 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:11:52 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:11:53 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (3.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:11:58 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:12:00 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:12:02 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/password/new" for ::1 at 2019-03-24 19:12:04 +0000
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/passwords/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 69ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:12:05 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (4.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:12:07 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:12:08 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:12:10 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:20:13 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 474ms (Views: 438.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:21:09 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:21:12 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:21:45 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 473ms (Views: 433.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:22:06 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:22:08 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 64ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:24:08 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.4ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (77.1ms)
+Completed 200 OK in 525ms (Views: 486.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:24:10 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.9ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:26:41 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.9ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:27:05 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:27:05 +0000
+  Rendered utilizadors/shared/_links.html.erb (1.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.4ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:27:20 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.8ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:31:15 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:31:15 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.7ms)
+  Rendered utilizadors/shared/_links.html.erb (0.1ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (17.9ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:33:42 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:33:42 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.7ms)
+  Rendered utilizadors/shared/_links.html.erb (0.1ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (16.4ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 70ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 62ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:33:54 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:33:54 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.8ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (15.0ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 72ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:35:03 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:35:03 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered utilizadors/shared/_links.html.erb (0.7ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (21.6ms)
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:35:33 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:35:33 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.8ms)
+  Rendered utilizadors/shared/_links.html.erb (0.3ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (10.9ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 98ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:36:46 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:36:46 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.0ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (19.8ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 69ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:37:06 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:37:06 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.8ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (18.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:37:45 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:37:45 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.9ms)
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (20.2ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:39:11 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:39:11 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.7ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (14.7ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:39:14 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:39:14 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered utilizadors/shared/_links.html.erb (0.9ms)
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (20.7ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:40:07 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:40:07 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.9ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (19.4ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 68ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 68ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:40:58 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:40:58 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.2ms)
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (30.3ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 99ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 79ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:41:40 +0000
+Processing by Devise::SessionsController#new as HTML
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:41:40 +0000
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered utilizadors/shared/_links.html.erb (0.8ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (13.1ms)
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.7ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:41:59 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:41:59 +0000
+Processing by Devise::RegistrationsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (27.9ms)
+  Rendered utilizadors/shared/_links.html.erb (0.4ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:42:10 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:42:10 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.1ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (16.3ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 65ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:42:59 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:42:59 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.1ms)
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (10.2ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:44:08 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.6ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 105ms (Views: 103.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:44:11 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (3.2ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 125ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/password/new" for ::1 at 2019-03-24 19:44:12 +0000
+Processing by Devise::PasswordsController#new as HTML
+  Rendering utilizadors/passwords/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.7ms)
+  Rendered utilizadors/passwords/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 92ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:44:14 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (2.1ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 130ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:46:30 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:46:30 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.8ms)
+  Rendered utilizadors/shared/_links.html.erb (0.1ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (16.9ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:46:33 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:46:33 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.1ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (20.7ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 85ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:47:46 +0000
+Processing by Devise::SessionsController#new as HTML
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:47:46 +0000
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered utilizadors/shared/_links.html.erb (1.0ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (11.9ms)
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.7ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:48:36 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:48:36 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.8ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (15.8ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/utilizadors/sign_in" for ::1 at 2019-03-24 19:50:06 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTO4P4vN2UmPejrW0lrIRZpzjaUM6ktMEjavqAJxEcykqTzrlS48G4gJfR1kBNHkuQMB9daUefV8lriG5Co0Ww==", "utilizador"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTO4P4vN2UmPejrW0lrIRZpzjaUM6ktMEjavqAJxEcykqTzrlS48G4gJfR1kBNHkuQMB9daUefV8lriG5Co0Ww==", "utilizador"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.8ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:50:08 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.7ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:50:10 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.5ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:50:12 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:50:14 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.7ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:50:51 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:50:51 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.9ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (23.6ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_in" for ::1 at 2019-03-24 19:51:07 +0000
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:51:07 +0000
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.9ms)
+  Rendered utilizadors/shared/_links.html.erb (0.2ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (17.7ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 66ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/utilizadors/sign_in" for ::1 at 2019-03-24 19:51:41 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XqyKG5eSuaxjyDEkiB1rdOrb5mdpyNRYkCl/iFfzFiCjNg7PiXFc/mS7du8+Q3LVyatqN7O25uH+iWimsagztw==", "utilizador"=>{"email"=>"jiaiqi", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUtilizador Load (42.0ms)[0m  [1m[34mSELECT  "utilizadors".* FROM "utilizadors" WHERE "utilizadors"."email" = $1 ORDER BY "utilizadors"."id" ASC LIMIT $2[0m  [["email", "jiaiqi"], ["LIMIT", 1]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 58ms (ActiveRecord: 45.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XqyKG5eSuaxjyDEkiB1rdOrb5mdpyNRYkCl/iFfzFiCjNg7PiXFc/mS7du8+Q3LVyatqN7O25uH+iWimsagztw==", "utilizador"=>{"email"=>"jiaiqi", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.8ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 190ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/utilizadors/sign_in" for ::1 at 2019-03-24 19:51:55 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"33f2NYUvdgaNJV/ILUz3ElNPnwAqToz0Ajj6C3PEBFUi7XLhm8yTVIpWGAObEu6zcD8TUPAwvk1smO0llZ8hwg==", "utilizador"=>{"email"=>"jiaiqi", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUtilizador Load (0.3ms)[0m  [1m[34mSELECT  "utilizadors".* FROM "utilizadors" WHERE "utilizadors"."email" = $1 ORDER BY "utilizadors"."id" ASC LIMIT $2[0m  [["email", "jiaiqi"], ["LIMIT", 1]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"33f2NYUvdgaNJV/ILUz3ElNPnwAqToz0Ajj6C3PEBFUi7XLhm8yTVIpWGAObEu6zcD8TUPAwvk1smO0llZ8hwg==", "utilizador"=>{"email"=>"jiaiqi", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.0ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 149ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/utilizadors/sign_in" for ::1 at 2019-03-24 19:52:16 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PG+clgsL25vnld66STzL7Xm2yazp+dZNbVRHVAA9n9zB9RhCFeg+yeDmmXH/YtJMWsZF/DOH5PQD9FB65ma6Sw==", "utilizador"=>{"email"=>"y.jiaqi@fct.unl.pt", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUtilizador Load (0.3ms)[0m  [1m[34mSELECT  "utilizadors".* FROM "utilizadors" WHERE "utilizadors"."email" = $1 ORDER BY "utilizadors"."id" ASC LIMIT $2[0m  [["email", "y.jiaqi@fct.unl.pt"], ["LIMIT", 1]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PG+clgsL25vnld66STzL7Xm2yazp+dZNbVRHVAA9n9zB9RhCFeg+yeDmmXH/YtJMWsZF/DOH5PQD9FB65ma6Sw==", "utilizador"=>{"email"=>"y.jiaqi@fct.unl.pt", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering utilizadors/sessions/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.9ms)
+  Rendered utilizadors/sessions/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 148ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:52:22 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (0.7ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/utilizadors/sign_up" for ::1 at 2019-03-24 19:52:46 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering utilizadors/registrations/new.html.erb within layouts/application
+  Rendered utilizadors/shared/_links.html.erb (1.3ms)
+  Rendered utilizadors/registrations/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/utilizadors" for ::1 at 2019-03-24 19:53:14 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xsoBuQlfbfDvCdiBST7Vlw4sWM+xIjoaCkBMOPNcxVqdT1Hz74F0Lyx1wIkFNfmC8QC9JFgaFsLtAUMNeSp38g==", "utilizador"=>{"email"=>"y.jiaqi@fct.unl.pt", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUtilizador Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "utilizadors" WHERE "utilizadors"."email" = $1 LIMIT $2[0m  [["email", "y.jiaqi@fct.unl.pt"], ["LIMIT", 1]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUtilizador Create (7.4ms)[0m  [1m[32mINSERT INTO "utilizadors" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "y.jiaqi@fct.unl.pt"], ["encrypted_password", "$2a$11$sQ3kcv9RnD/KDcM9vIUtjOCQjVFq5kEsuPxgC2KJwcLsnKAwM9WyO"], ["created_at", "2019-03-24 19:53:14.180237"], ["updated_at", "2019-03-24 19:53:14.180237"]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 154ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/" for ::1 at 2019-03-24 19:53:14 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-24 19:54:16 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/grupos" for ::1 at 2019-03-24 19:55:18 +0000
+Processing by GruposController#index as HTML
+  Rendering grupos/index.html.erb within layouts/application
+  Rendered grupos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/sample-1.jpg" for ::1 at 2019-03-24 19:55:18 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/images/sample-1.jpg"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/gru" for ::1 at 2019-03-24 19:55:18 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/gru"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/gru" for ::1 at 2019-03-24 19:55:18 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/gru"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/g" for ::1 at 2019-03-24 20:02:00 +0000
+  [1m[35m (20.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/g"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-03-24 20:02:00 +0000
+Processing by Devise::SessionsController#new as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.6.1) app/controllers/devise_controller.rb:90:in `unknown_action!'
+devise (4.6.1) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+devise (4.6.1) app/controllers/devise_controller.rb:103:in `require_no_authentication'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-03-24 20:02:01 +0000
+Processing by Devise::SessionsController#new as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 47ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.6.1) app/controllers/devise_controller.rb:90:in `unknown_action!'
+devise (4.6.1) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+devise (4.6.1) app/controllers/devise_controller.rb:103:in `require_no_authentication'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-03-24 20:02:19 +0000
+Processing by Devise::SessionsController#new as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.6.1) app/controllers/devise_controller.rb:90:in `unknown_action!'
+devise (4.6.1) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+devise (4.6.1) app/controllers/devise_controller.rb:103:in `require_no_authentication'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/s" for ::1 at 2019-03-24 20:02:19 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/s"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/s" for ::1 at 2019-03-24 20:02:19 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/s"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-03-24 20:05:36 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.6.1) app/controllers/devise_controller.rb:90:in `unknown_action!'
+devise (4.6.1) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+devise (4.6.1) app/controllers/devise_controller.rb:103:in `require_no_authentication'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-03-24 20:07:55 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.6.1) app/controllers/devise_controller.rb:90:in `unknown_action!'
+devise (4.6.1) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+devise (4.6.1) app/controllers/devise_controller.rb:103:in `require_no_authentication'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.2.1) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
